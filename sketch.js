@@ -1,20 +1,11 @@
 var trex, trex_running, trex_collided;
 var ground, invisibleGround, groundImage;
 
-
-
-
-
-
-
 function preload(){
   trex_running = loadAnimation("trex1.png","trex2.png","trex3.png");
   trex_collided = loadImage("trex_collided.png");
   
   groundImage = loadImage("ground2.png");
-  
- 
-  
 }
 
 function setup() {
@@ -41,8 +32,6 @@ function setup() {
 function draw() {
   //establecer color de fondo
   background(220);
-  
-  
   
   //hacer que el trex salte al presionar la barra espaciadora
   if(keyDown("space")&& trex.y >= 100) {
